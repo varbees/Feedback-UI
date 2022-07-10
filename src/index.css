@@ -87,8 +87,9 @@ header {
 
 .rating li:hover,
 .num-display {
-  background: #ff6a95;
+  background: #d01565;
   color: #fff;
+  border: none;
 }
 
 [type='radio'] {
