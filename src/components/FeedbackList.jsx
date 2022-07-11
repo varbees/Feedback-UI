@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const FeedbackList = ({ feedback, handleDelete }) => {
   if (!feedback || feedback.length === 0) {
-    return <p>No Feedback Comments</p>;
+    return <p className='message'>No Feedback Comments</p>;
   }
 
   return (
