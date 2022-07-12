@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AboutIconLink from './components/AboutIconLink';
 import FeedbackForm from './components/FeedbackForm';
 import FeedbackList from './components/FeedbackList';
 import FeedbackStats from './components/FeedbackStats';
@@ -24,6 +26,7 @@ const App = () => {
   return (
     <>
       <Router>
+<<<<<<< HEAD
         <Header text='Feedbac' />
         <div className='container'>
           <Routes>
@@ -43,6 +46,14 @@ const App = () => {
             ></Route>
             <Route path='/about' element={<AboutPage />} />
           </Routes>
+=======
+        <Header text='Feedback UI' />
+        <div className='container'>
+          <FeedbackForm handleAdd={addFeedback} />
+          <FeedbackStats feedback={feedback} />
+          <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
+          <AboutIconLink />
+>>>>>>> 359fc4d85a5c9606530a388cacdfa83a6784bf3d
         </div>
       </Router>
     </>
