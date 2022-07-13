@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AboutIconLink from './components/AboutIconLink';
 import FeedbackForm from './components/FeedbackForm';
 import FeedbackList from './components/FeedbackList';
 import FeedbackStats from './components/FeedbackStats';
@@ -21,12 +23,15 @@ const App = () => {
 
   return (
     <>
-      <Header text='Feedback UI' />
-      <div className='container'>
-        <FeedbackForm handleAdd={addFeedback} />
-        <FeedbackStats feedback={feedback} />
-        <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
-      </div>
+      <Router>
+        <Header text='Feedback UI' />
+        <div className='container'>
+          <FeedbackForm handleAdd={addFeedback} />
+          <FeedbackStats feedback={feedback} />
+          <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
+          <AboutIconLink />
+        </div>
+      </Router>
     </>
   );
 };
