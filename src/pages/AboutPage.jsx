@@ -18,9 +18,9 @@ function AboutPage() {
         </a>
       </p>
       <p>
-        <Button>
-          <Link to='/'>Back</Link>
-        </Button>
+        <Link to='/'>
+          <Button version='secondary'>Back</Button>
+        </Link>
       </p>
     </Card>
   );

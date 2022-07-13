@@ -160,8 +160,16 @@ input:focus {
   background-color: #202142;
 }
 
+.btn-primary:hover {
+  background-color: #d01565;
+}
+
 .btn-secondary {
-  background: #ff6a95;
+  background: #d01565;
+}
+
+.btn-secondary:hover {
+  background: #202142;
 }
 
 .btn:hover {
